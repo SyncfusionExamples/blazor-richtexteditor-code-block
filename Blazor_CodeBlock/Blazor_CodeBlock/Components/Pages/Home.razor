@@ -1,0 +1,34 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+@using Syncfusion.Blazor.RichTextEditor
+
+<SfRichTextEditor ID="code-block">
+    <RichTextEditorToolbarSettings Items="Tools"></RichTextEditorToolbarSettings>
+    <RichTextEditorCodeBlockSettings Languages="languages" DefaultLanguage="javascript" />
+</SfRichTextEditor>
+
+@code {
+
+    private List<CodeBlockLanguageModel> languages = new List<CodeBlockLanguageModel>
+         {
+             new CodeBlockLanguageModel { Label = "CSS", Language = "css"},
+             new CodeBlockLanguageModel { Label = "HTML", Language = "html"},
+             new CodeBlockLanguageModel { Label = "Java", Language = "java"},
+             new CodeBlockLanguageModel { Label = "JavaScript", Language = "javascript"}
+         };
+
+
+    private List<ToolbarItemModel> Tools = new List<ToolbarItemModel>()
+    {
+        new ToolbarItemModel() { Command = ToolbarCommand.CodeBlock },
+        new ToolbarItemModel() { Command = ToolbarCommand.Bold },
+        new ToolbarItemModel() { Command = ToolbarCommand.Italic },
+        new ToolbarItemModel() { Command = ToolbarCommand.Underline },
+        new ToolbarItemModel() { Command = ToolbarCommand.CreateLink },
+        new ToolbarItemModel() { Command = ToolbarCommand.Image },
+        new ToolbarItemModel() { Command = ToolbarCommand.CreateTable },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.SourceCode },
+    };
+}
