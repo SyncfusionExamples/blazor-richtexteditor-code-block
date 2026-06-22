@@ -1,6 +1,6 @@
 # Blazor Rich Text Editor - Code Block Insertion
 
-This sample project demonstrates how to insert and format code snippets within the editor’s content area. [Syncfusion Blazor Rich Text Editor](https://www.syncfusion.com/blazor-components/blazor-rich-text-editor).
+This sample project demonstrates how to insert and format code snippets within the editor’s content area. [Syncfusion Blazor Rich Text Editor](https://blazor.syncfusion.com/documentation/rich-text-editor/getting-started-webapp).
 
 
 ## Getting Started
