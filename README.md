@@ -35,3 +35,4 @@ This sample project demonstrates how to insert and format code snippets within t
     ```
 5. Open the browser at https://localhost:port (port varies).
 
+>Looking for the full Blazor Rich Text Editor component overview, features, pricing, and documentation? Visit the [Blazor Rich Text Editor](https://www.syncfusion.com/blazor-components/blazor-rich-text-editor) page.
